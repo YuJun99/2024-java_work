@@ -1,0 +1,14 @@
+package test.main;
+
+public class MainClass01 {
+	public static void main(String[] args) {
+		// int type 5 개를 저장하고 있는 배열 객체 생성해서 참조값을 nums 라는 지역 변수에 담기
+		int[] nums = {10, 20, 30, 40, 50};
+		//double type 5개를 저장하고 있는 배열 객체 생성해서 참조값을 nums2 라는 지역 변수에 담아 보세요
+		double[] nums2 = {10.1, 15.1, 11.1, 13.1, 12.1};
+		//boolean type 5개를 저장하고 있는 배열
+		boolean[] bo = new boolean[5];
+		//String type (참조데이터 type) 5개를 저장하고 있는 배열
+		String[] str = new String[5];
+	}
+}

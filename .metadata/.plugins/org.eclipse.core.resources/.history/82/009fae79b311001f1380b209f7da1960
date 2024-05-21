@@ -1,0 +1,9 @@
+package test.main;
+
+import test.mypac.Car;
+
+public class TestClass {
+	public static void main(String[] args) {
+		Car
+	}
+}

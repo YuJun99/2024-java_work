@@ -1,0 +1,50 @@
+pacage test.main;
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int count1 = 0;
+        int count2 = 0;
+        for(int i = 0; i < 20; i++) {
+            String A = sc.next();
+            float B = sc.nextFloat();
+            String C = sc.next();
+            
+            count1 += B;
+            switch (C) {
+                case "A+"    :
+                    count2 += (B *4.5);
+                    break;
+                case "A0"    :
+                    count2 += (B * 4.0);
+                    break;
+                case "B+"    :
+                    count2 += (B * 3.5);
+                    break;
+                case "B0"    :
+                    count2 += (B * 3.0);
+                    break;
+                case "C+"    :
+                    count2 += (B * 2.5);
+                    break;
+                case "C0"    :
+                    count2 += (B * 2.0);
+                    break;
+                case "D+"    :
+                    count2 += (B * 1.5);
+                    break;
+                case "D0"    :
+                    count2 += (B * 1.0);
+                    break;
+                case "F"    :
+                    count2 += (B * 0.0);
+                    break;
+                case "P"    :
+                    break;
+            }
+            
+        } System.out.print(count2/count1);
+    }
+}

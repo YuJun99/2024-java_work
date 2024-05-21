@@ -1,0 +1,10 @@
+package test.main;
+
+import java.util.Scanner;
+import test.mypac.QuadArea;
+
+public class Quad {
+	public static void main(String[] args) {
+		
+	}
+}

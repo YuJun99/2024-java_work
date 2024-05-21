@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="test.mypac.Car"/>
+    <fullyQualifiedTypeName name="test.mypac.MyUtil"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="test.mypac.QuadArea"/>
+    <fullyQualifiedTypeName name="test.mypac.Test"/>
+    <fullyQualifiedTypeName name="test.mypac.Member"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="test.mypac.Bike"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="test1.Extends.Car"/>
+    <fullyQualifiedTypeName name="test1.Extends.Vehicle"/>
+    <fullyQualifiedTypeName name="test.mypac.HandPhone"/>
+    <fullyQualifiedTypeName name="test.mypac.AndroidPhone"/>
+    <fullyQualifiedTypeName name="test.mypac.Phone"/>
+    <fullyQualifiedTypeName name="test.auto.SportsCar"/>
+    <fullyQualifiedTypeName name="test.auto.Engine"/>
+    <fullyQualifiedTypeName name="test.auto.Car"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="test.util.MyUtil"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="prac_Phone.Phone"/>
+    <fullyQualifiedTypeName name="prac_Phone.IPhone"/>
+    <fullyQualifiedTypeName name="prac_Phone.Android"/>
+</qualifiedTypeNameHistroy>

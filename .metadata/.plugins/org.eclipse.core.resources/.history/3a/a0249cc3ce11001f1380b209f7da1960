@@ -1,0 +1,17 @@
+package test.main;
+
+import java.util.Scanner;
+import test.mypac.QuadArea;
+
+public class Quad {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("가로의 길이: ");
+		int width = sc.nextInt();
+		System.out.println("세로의 길이: ");
+		int height = sc.nextInt();
+		
+		System.out.println(showArea());
+	}
+}

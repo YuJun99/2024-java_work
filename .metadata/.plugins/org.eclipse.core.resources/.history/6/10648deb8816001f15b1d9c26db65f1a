@@ -1,0 +1,15 @@
+package prac_Phone;
+
+public class IPhone{
+	public void iphone(String a) {
+		if (a.contains("아이폰")) {
+			System.out.println("아이폰 입니다");
+		}
+		else if (a.contains("iPhone")) {
+			System.out.println("아이폰 입니다");
+		}
+		else {
+			System.out.println("아이폰이 아닙니다.");
+		}
+	}
+}

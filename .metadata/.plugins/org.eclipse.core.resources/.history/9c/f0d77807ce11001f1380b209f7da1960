@@ -1,0 +1,8 @@
+package test.mypac;
+
+public class QuadArea {
+	public static void showArea(int a, int b) {
+		public int w;
+		System.out.print("사각형의 넓이: " + a*b);
+	}
+}

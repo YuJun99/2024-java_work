@@ -1,0 +1,17 @@
+package test.main;
+
+import test.mypac.HandPhone;
+import test.mypac.Phone;
+
+public class MainClass04 {
+	public static void main(String[] args) {
+		//HandPhone 객체를 생성해서 나온 참조값을 Object type p3 라는 지역변수에 담기
+		Object p3 = new HandPhone();
+		
+		Phone p2 = (Phone)p3;
+		
+		HandPhone p1 = (HandPhone)p3;
+		
+		p1.mobileCall();
+	}
+}

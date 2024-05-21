@@ -1,0 +1,22 @@
+package test.main;
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();
+        int result = 0;
+        String answer = "";
+        
+        String[] str = Long.toString(A).split("");
+        Arrays.sort(str);
+        for(String s : str){
+            answer += s;
+            
+            result = Integer.parseInt(answer);
+            
+            System.out.print(result);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+package test1.main;
+
+
+public class Study01{
+	private int width;
+	private int amount;
+	public int getAmount() {return amount;}
+	public void setAmount (int amount) {this.amount = amount;}
+}
+
+public class Ballpen extends Study01{
+	private String color;
+	public String getColor() {return color;}
+	public void setColor(String color) {this.color = color;}
+}
+
+public class FountainPen extends Ballpen{
+	public void refil(int n) {setAmount(n);}
+}
