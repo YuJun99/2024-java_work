@@ -1,6 +1,7 @@
 package test.main;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainClass01 {
 	public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class MainClass01 {
 		names[2] = "원숭이";
 		
 		//String type 을 순서대로 저장할 수 있는 ArrayList 객체 생성하고 참조값을 friends 에 담기
-		ArrayList<String> friends = new ArrayList<>();
+		List<String> friends = new ArrayList<>();
 		friends.add(names[0]);
 		friends.add("해골");
 		friends.add("원숭이");
@@ -23,10 +24,10 @@ public class MainClass01 {
 		//1 번방의 아이템을 삭제하려면?
 		friends.remove(1);
 		//0 번방에 "에이콘"을 넣고 (끼워넣기) 싶으면?
-		friends.set(0, "에이콘");
+		friends.add(0, "에이콘");
 		//저장된 아이템의 갯수(size) 를 size 라는 지역 변수에 담아보세요.
 		int size = friends.size();
 		//저장된 모든 아이템 전체 삭제
-		friends.removeAll(friends);
+		friends.clear();
 	}
 }
