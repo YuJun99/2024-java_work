@@ -22,8 +22,24 @@
     <fullyQualifiedTypeName name="test.auto.Car"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="test.util.MyUtil"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="prac_Phone.Phone"/>
     <fullyQualifiedTypeName name="prac_Phone.IPhone"/>
     <fullyQualifiedTypeName name="prac_Phone.Android"/>
+    <fullyQualifiedTypeName name="test.mypac.MyWeapon"/>
+    <fullyQualifiedTypeName name="test1.main.B"/>
+    <fullyQualifiedTypeName name="test.mypac.Zoo"/>
+    <fullyQualifiedTypeName name="test.mypac.Zoo.Monkey"/>
+    <fullyQualifiedTypeName name="test.mypac.Zoo.Tiger"/>
+    <fullyQualifiedTypeName name="test.mypac.Weapon"/>
+    <fullyQualifiedTypeName name="test.mypac.MyRemocon"/>
+    <fullyQualifiedTypeName name="test.mypac.Remocon"/>
+    <fullyQualifiedTypeName name="test.mypac.Drill"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="test.mypac.Calc"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="test.mypac.FruitBox"/>
+    <fullyQualifiedTypeName name="test.mypac.Apple"/>
+    <fullyQualifiedTypeName name="test.mypac.Melon"/>
+    <fullyQualifiedTypeName name="test.mypac.Orange"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
