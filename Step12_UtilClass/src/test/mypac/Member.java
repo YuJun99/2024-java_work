@@ -17,4 +17,5 @@ public class Member {
 		this.name = name;
 		this.addr = addr;
 	}
+	
 }
