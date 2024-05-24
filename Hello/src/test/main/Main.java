@@ -28,39 +28,28 @@ public class Main{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
-        int N = Integer.parseInt(br.readLine());
-        List<Integer> list = new ArrayList<>(); // 2 4 -10 4 -9
+        int N = Integer.parseInt(br.readLine()); 
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-        int[] arr1 = new int[N];
         
+        List<Integer> list = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
         for (int i = 0; i < N; i++) {
         	int a = Integer.parseInt(st.nextToken());
-			list.add(a);
-			arr1[i] = a; // {2, 4, -10, 4, -9}
+			list.add(a);	// 2 4 -10 4 -9
+			set.add(a);		// 2 4 -10 -9
 		}
-        br.close();
-        
-        Set<Integer> set1 = new HashSet<>(list);
-        List<Integer> list1 = new ArrayList<>(set1); // 중복 제거 후 리스트에 값 추가
-        
-        Collections.sort(list1); // -10 -9 2 4
-        
-        int size = list1.size();
-        int[][] arr = new int[size][2];
-        for (int i = 0; i < size; i++) {
-			arr[i][0] = i;
-			arr[i][1] = list1.get(i); // {{0, -10}, {1, -9}, {2, 2}, {3, 4}}
+        int[] numbers = new int[set.size()];
+        int idx = 0;
+        for (int i : set) {
+			numbers[idx++] = i;		// {2, 4, -10, -9}
 		}
+        Arrays.sort(numbers);		// {-10, -9, 2, 4}
         
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < N; i++) {
-        	for(int j = 0; j < size; j++) {
-        		if(arr1[i] == arr[j][1]) {
-        			bw.write(arr[j][0] + " ");;
-        		}
-        	}
-        }
-        bw.flush();
-        bw.close(); // 버퍼 지우고 닫기
+        for (int i = 0; i < list.size(); i++) {
+			int j = Arrays.binarySearch(numbers, list.get(i));	// 해당 인덱스 값이 나옴
+			sb.append(j + " ");
+		}
+        System.out.println(sb);
     }
 }
