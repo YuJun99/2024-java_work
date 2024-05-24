@@ -38,6 +38,7 @@ public class Main{
 			list.add(a);
 			arr1[i] = a; // {2, 4, -10, 4, -9}
 		}
+        br.close();
         
         Set<Integer> set1 = new HashSet<>(list);
         List<Integer> list1 = new ArrayList<>(set1); // 중복 제거 후 리스트에 값 추가
