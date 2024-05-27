@@ -13,8 +13,9 @@ package test.main;
  */
 public class QuizMain {
 	public static void main(String[] args) {
-		int sec = 1;
+		int sec = 0;
 		int min = 0;
+		int hour = 0;
 		while(true) {
 			try {
 				Thread.sleep(1000);
@@ -25,7 +26,11 @@ public class QuizMain {
 					min++;
 					sec = 0;
 				}
-				System.out.println(min+"분 "+ sec +"초");
+				if(min == 60) {
+					hour++;
+					min = 0;
+				}
+				System.out.println(hour + "시 " + min+"분 "+ sec +"초");
 				sec++;
 		}
 	}
