@@ -12,8 +12,9 @@ import java.io.Writer;
 public class Quiz {
 	public static void main(String[] args) throws IOException {
 		var br = new BufferedReader(new InputStreamReader(System.in));
-		FileWriter fw = new FileWriter("C:\\Users\\user\\Desktop\\test.txt");
-		
+			
+		var fw = new FileWriter("C:\\Users\\user\\playground\\myFolder\\test.txt");
+
 		String s = br.readLine();
 		
 		var bw = new BufferedWriter(fw);

@@ -21,7 +21,12 @@ public class Main{
 			int a = sc.nextInt();
 			list2.add(a);
 		}
-		
-		
+		for (int i = 0; i < list2.size(); i++) {
+			if (list1.retainAll(list2)) {
+				System.out.print("1 ");
+			}else {
+				System.out.print("0 ");
+			}
+		}
 	}
 }
