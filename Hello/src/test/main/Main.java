@@ -1,11 +1,15 @@
 package test.main;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main{
 	public static void main(String[] args) {
+//		var br = new BufferedReader(InputStreamReader(System.in));
+		
 		Scanner sc = new Scanner(System.in);
 		
 		List<Integer> list1 = new ArrayList<Integer>();
@@ -21,8 +25,8 @@ public class Main{
 			int a = sc.nextInt();
 			list2.add(a);
 		}
-		for (int i = 0; i < list2.size(); i++) {
-			if (list1.retainAll(list2)) {
+		for(int item : list2) {
+			if(list1.contains(item) == true) {
 				System.out.print("1 ");
 			}else {
 				System.out.print("0 ");

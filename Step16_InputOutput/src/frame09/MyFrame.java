@@ -105,27 +105,42 @@ public class MyFrame extends JFrame{
 				setTitle(fileName);
 				//TextArea 를 보이게 하고 
 				ta.setVisible(true);
+				//문자열을 로딩한다.
 				loadFromFile();
-				
+				//saveItem, saveAsItem 을 활성화 한다
+				saveItem.setEnabled(true);
+				saveAsItem.setEnabled(true);
 			}
 		});
-		
+		//Save 를 눌렀을 때
+		saveItem.addActionListener((e)->{
+			saveToFile();
+		});
 	}//생성자
+	
 	
 	//선택된 파일로 부터 문자열을 읽어와서 JTextArea 에 출력하는 메소드
 	public void loadFromFile() {
-		String content2 = ta.getText();
+		BufferedReader br = null;
+		FileReader fr = null;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(openedFile));
+			//필드에 저장되어 있는 File 객체를 이용해서 FileReader 객체를 생성한다.
+			fr = new FileReader(openedFile);
+			// 좀 더 편하게 문자열을 읽어들이기 위해 FileReader 객체를 BufferedReader 로 포장한다.
+			br = new BufferedReader(fr);
 			while(true) {
-				try {
-					if(br.readLine() == null) break;
-					ta.append(content2);
-				} catch (IOException e) {}
-				
+				String line = br.readLine();
+				if(line == null)break;
+				//JTextArea 에 1줄씩 추가하기
+				ta.append(line + "\r\n");
 			}
-		} catch (FileNotFoundException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
+		}finally {
+			try {
+				if (br!=null)br.close();
+				if (fr != null)fr.close();
+			}catch(Exception e) {}
 		}
 		
 	}
