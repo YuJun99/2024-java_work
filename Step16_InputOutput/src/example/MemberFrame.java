@@ -38,6 +38,7 @@ public class MemberFrame extends JFrame implements ActionListener{
 		JLabel label1=new JLabel("번호");
 		JLabel label2=new JLabel("이름");
 		JLabel label3=new JLabel("주소");
+		
 		//JTextField 3개
 		inputNum=new JTextField(10);
 		inputName=new JTextField(10);
